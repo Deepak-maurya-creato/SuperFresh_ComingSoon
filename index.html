@@ -24,7 +24,6 @@
             }
         }
         .zigzag {
-            display: inline-block;
             padding: 1rem;
             margin: 1rem;
             border-radius: 0.5rem;
@@ -36,17 +35,6 @@
         .zigzag:hover {
             transform: rotate(5deg) scale(1.05);
         }
-        .main-content {
-            padding: 2rem;
-            z-index: 10;
-        }
-        .cards-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 2rem;
-            z-index: 5;
-        }
     </style>
 </head>
 <body class="flex flex-col min-h-screen">
@@ -56,17 +44,21 @@
     </header>
 
     <!-- Main Content -->
-    <main class="flex-grow flex flex-col items-center justify-center bg-gray-100 main-content">
+    <main class="flex-grow flex flex-col items-center justify-center bg-gray-100 px-4">
         <div class="text-center mb-8">
-            <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-4">We're Coming Out with <span style="color: #d63f48;">Super Fresh</span> Home Care Products Very Soon!</h2>
-            <p class="text-lg text-gray-600">Stay tuned for an exciting range of home care solutions designed to make your life fresher and better.</p>
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-4">
+                We're Coming Out with <span style="color: #d63f48;">Super Fresh</span> Home Care Products Very Soon!
+            </h2>
+            <p class="text-lg text-gray-600">
+                Stay tuned for an exciting range of home care solutions designed to make your life fresher and better.
+            </p>
             <div class="mt-6">
                 <img src="logo.jpeg" alt="Superfresh Logo" class="mx-auto w-48 md:w-64 logo-animation">
             </div>
         </div>
 
         <!-- Floating Zigzag Cards -->
-        <div class="cards-container">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
             <div class="zigzag">
                 <h3 class="text-lg font-bold text-gray-800">Super Fresh Toilet Cleaner</h3>
             </div>
@@ -74,13 +66,16 @@
                 <h3 class="text-lg font-bold text-gray-800">Super Fresh Floor Cleaner</h3>
             </div>
             <div class="zigzag">
-                <h3 class="text-lg font-bold text-gray-800">Superfresh Glass Cleaner</h3>
+                <h3 class="text-lg font-bold text-gray-800">Super Fresh Glass Cleaner</h3>
             </div>
             <div class="zigzag">
                 <h3 class="text-lg font-bold text-gray-800">Super Fresh Dishwash Liquid</h3>
             </div>
             <div class="zigzag">
                 <h3 class="text-lg font-bold text-gray-800">Super Fresh Air Freshener</h3>
+            </div>
+            <div class="zigzag">
+                <h3 class="text-lg font-bold text-gray-800">Super Fresh Laundry Detergent</h3>
             </div>
         </div>
     </main>
@@ -89,8 +84,11 @@
     <footer class="maroon py-4 text-center">
         <p class="text-sm">Phone: +19 9971273017</p>
         <p class="text-sm">Email: superfresh23@yahoo.com</p>
-        <p class="text-sm mt-2">&copy; 2024 Super Fresh. All rights reserved. | <a href="privacy-policy.html">Privacy policies</a> &nbsp; <a href="terms.html">Terms & Conditions</a></p>
+        <p class="text-sm mt-2">
+            &copy; 2024 Super Fresh. All rights reserved. |
+            <a href="privacy-policy.html">Privacy policies</a> &nbsp;
+            <a href="terms.html">Terms & Conditions</a>
+        </p>
     </footer>
 </body>
 </html>
- 
