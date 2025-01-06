@@ -35,6 +35,34 @@
         .zigzag:hover {
             transform: rotate(5deg) scale(1.05);
         }
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            z-index: 1000;
+            animation: whatsappPulse 2s infinite ease-in-out;
+        }
+        @keyframes whatsappPulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        .whatsapp-icon img {
+            width: 30px;
+            height: 30px;
+        }
     </style>
 </head>
 <body class="flex flex-col min-h-screen">
@@ -90,5 +118,10 @@
             <a href="terms.html">Terms & Conditions</a>
         </p>
     </footer>
+
+    <!-- WhatsApp Icon -->
+    <a href="https://wa.me/19971273017" target="_blank" class="whatsapp-icon" aria-label="Contact us on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
 </body>
 </html>
